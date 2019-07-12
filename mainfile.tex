@@ -1,0 +1,72 @@
+% !Mode:: "TeX:UTF-8"
+% !TEX builder = LATEXMK
+% !TEX program = xelatex
+% !Template main file/ Created By TTB finished in 2019.07.11
+
+
+% 该模板使用的选项：
+% 学硕(Academic Master)请选择 AcaMaster，专硕(Professional Master)请选择 ProMaster，
+% 如果有合作导师请选择 cpsupervisor，如果没有合作导师请选择 nocpsupervisor
+\documentclass[AcaMaster, cpsupervisor]{nefuthesis}
+
+% 欢迎大家帮忙核对字体以及格式，如果疏漏欢迎提出issue，欢迎PR https://github.com/mrluin/nefuthesis
+
+% 论文中文标题
+\title{用\LaTeX 使论文变得优雅} 
+% 论文英文标题
+\englishtitle{Make Paper Elegant by \LaTeX}
+% 你的名字
+\author{狗蛋儿}
+\authorenglishname{Guldan}
+% 学校代码
+\serialnumber{xxxxx} % 这个内容先不用填写
+% 学号
+\studentnumber{xxxxxx} % 这个内容也一样不用填写
+% 指导教师的中文名字，职位，以及学校
+% 指导教师的英文名字，职位  副教授 Associate Prof. 教授 Prof.
+% 四号字体用14pt进行占格，词与词之间用5pt进行间隔
+% 仅作为例子进行参考
+\supervisor{李老板\hspace{5pt}副教授\hspace{5pt}东北林业大学}
+\supervisorenglish{Associate Prof.Laoban Li}
+% 合作导师，如果没有合作导师，就在\documentclass选项栏中加上"nocpsupervisor"。
+\cpsupervisor{王老板\hspace{5pt}教\hspace{14pt}授\hspace{5pt}东北林业大学}
+\cpsupervisorenglish{Associate Prof.Laoban Wang}
+% 申请学位级别 此处 \hspace{14pt} 为了与前文中三个字的内容进行对齐
+\degreelevel{硕\hspace{14pt}士}
+\degreelevelenglish{Master}
+% 学科专业
+\major{计算机系统结构}
+\majorenglish{Computer Architecture}
+% 论文提交日期
+\submitdate{2019.06}
+% 论文答辩日期
+\replydate{2019.06}
+\replydateenglish{June, 2019}
+% 授予学位单位
+\awardingunit{东北林业大学}
+\awardingunitenglish{Northeast Forestry University}
+% 授予学位日期
+\awardingdate{2019.06}
+
+\begin{document}
+% 封面页 中文封面 英文封面 
+\maketitle  
+\frontmatter
+% 中文摘要 英文摘要
+\include{contents/abstract_chinese}
+\include{contents/abstract_english}
+% 目录
+\tableofcontents
+\mainmatter
+% 正文
+\include{contents/maincontent}
+\backmatter
+% 结论
+\include{contents/conclusion}
+% 参考文献 这里的文件为bibtex格式 使用文中提到的 zotero jabref文献管理工具可以轻松将bibtex文件导出
+\bibliography{references}
+% 攻读学位期间发表的论文
+\include{contents/publishment}
+% 致谢
+\include{contents/thanks}
+\end{document}
