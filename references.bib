@@ -1,0 +1,38 @@
+% Encoding: UTF-8
+
+@article{selvaraju_grad-cam:_2016,
+	title = {Grad-{CAM}: {Visual} {Explanations} from {Deep} {Networks} via {Gradient}-based {Localization}},
+	shorttitle = {Grad-{CAM}},
+	url = {https://arxiv.org/abs/1610.02391v3},
+	abstract = {We propose a technique for producing "visual explanations" for decisions from
+a large class of CNN-based models, making them more transparent. Our approach -
+Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of
+any target concept, flowing into the final convolutional layer to produce a
+coarse localization map highlighting the important regions in the image for
+predicting the concept. Unlike previous approaches, GradCAM is applicable to a
+wide variety of CNN model-families: (1) CNNs with fully-connected layers (e.g.
+VGG), (2) CNNs used for structured outputs (e.g. captioning), (3) CNNs used in
+tasks with multimodal inputs (e.g. VQA) or reinforcement learning, without any
+architectural changes or re-training. We combine GradCAM with fine-grained
+visualizations to create a high-resolution class-discriminative visualization
+and apply it to off-the-shelf image classification, captioning, and visual
+question answering (VQA) models, including ResNet-based architectures. In the
+context of image classification models, our visualizations (a) lend insights
+into their failure modes (showing that seemingly unreasonable predictions have
+reasonable explanations), (b) are robust to adversarial images, (c) outperform
+previous methods on weakly-supervised localization, (d) are more faithful to
+the underlying model and (e) help achieve generalization by identifying dataset
+bias. For captioning and VQA, our visualizations show that even non-attention
+based models can localize inputs. Finally, we conduct human studies to measure
+if GradCAM explanations help users establish trust in predictions from deep
+networks and show that GradCAM helps untrained users successfully discern a
+"stronger" deep network from a "weaker" one. Our code is available at
+https://github.com/ramprs/grad-cam. A demo and a video of the demo can be found
+at http://gradcam.cloudcv.org and youtu.be/COjUB9Izk6E.},
+	language = {en},
+	urldate = {2019-07-06},
+	author = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+	month = oct,
+	year = {2016}
+}
+@Comment{jabref-meta: databaseType:bibtex;}
